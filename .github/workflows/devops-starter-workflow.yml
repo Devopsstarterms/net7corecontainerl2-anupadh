@@ -36,7 +36,6 @@ jobs:
             dotnet build --configuration Release
             dotnet test aspnet-core-dotnet-core.UnitTests/aspnet-core-dotnet-core.UnitTests.csproj  --verbosity normal
             popd
-    - name: Create Azure container registry
     - uses: azure/arm-deploy@v1
       id: createAcr
       with:
